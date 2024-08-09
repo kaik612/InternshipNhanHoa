@@ -1,5 +1,6 @@
+						![image](https://github.com/user-attachments/assets/61beecf3-bbb1-47e7-8a45-adbfd5a60bf0)
+
 I.Khái quát về công ty và các sản phẩm của công ty
-![image](https://github.com/user-attachments/assets/61beecf3-bbb1-47e7-8a45-adbfd5a60bf0)
 
 Công ty TNHH Phần mềm Nhân Hòa là 1 trong những cty hàng đầu tại Việt Nam trong lĩnh vực công nghệ thông tin và dịch vụ internet. Dưới đây là danh sách các sản phẩm và dịch vụ mà Nhần Hòa cung cấp:
 
