@@ -60,7 +60,9 @@ Backup và phục hồi dữ liệu: dịch vụ sao lưu và phục hồi dữ 
 Firewall & Security Solotions: các giải pháp bảo mật tường lửa và an ninh mạng cho doanh nghiệp.
 
 II.Công nghệ ứng dụng
+
 1.Tên miền (Domain)
+
 1.1Khái niệm
 - Tên miền là địa chỉ duy nhất của 1 trang web trên internet, hoạt động như 1 “địa chỉ nhà” cho trang web. Nó giúp người dùng có thể dễ dàng truy cập vào trang web của bạn mà không cần phải ghi nhớ địa chỉ IP (Internet Protocol), 1 dãy số phức tạp. 	+ VD: thay vì nhớ địa chỉ IP như ‘192.0.2.1’, người dùng có thể gõ 	‘google.com’ để truy cập Google.
 
