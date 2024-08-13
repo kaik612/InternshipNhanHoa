@@ -325,3 +325,24 @@ Sau khi phát triênr ứng dụng web trên XAMPP, bạn cần chuyển nó san
 - chuyển các tệp web từ XAMPP lên máy chủ: bạn có thể sử dụng FTP hoặc các công cụ tương tự để tải các tệp lên máy chủ thực tế.
 - chuyển cơ sở dữ liệu: sử dung công cụ phpAdmin để xuất cơ sở dữ liệu từ XAMPP và nhập nó vào cơ sở dữ liệu trên máy chủ thực tế.
 - kiểm tra câus hình: đảm bảo rằng tất cả các cấu hình như đường dẫn, quuyền truy cập, và cấu hình máy chủ đã được điều chỉnh phù hợp cho môi trường sản xuất.
+
+11.Phân biệt SSL, TLS, HTTP, HTTPS
+- HTTP giống như gửi thư bằng bưu thiếp. Nội dung thư ai cũng có thể đọc được nếu họ muốn.
+
+- HTTPS giống như gửi thư trong một phong bì được niêm phong cẩn thận. Chỉ có người nhận mới có thể mở và đọc nội dung bên trong.
+
+- SSL và TLS là những công nghệ giúp "niêm phong" bức thư của bạn (HTTPS). Chúng mã hóa nội dung thư để đảm bảo rằng chỉ có người nhận dự định mới có thể giải mã và đọc nó.
++ SSL là phiên bản cũ hơn.
++ TLS là phiên bản mới hơn, an toàn hơn của SSL.
+
+Tóm lại:
+- HTTP: Giao thức gửi thông tin trên internet, không được mã hóa, không an toàn
+- HTTPS: Phiên bản an toàn của HTTP, sử dụng SSL/TLS để mã hóa thông tin
+- SSL/TLS: Công nghệ mã hóa giúp bảo vệ thông tin khi truyền trên internet
+
+Khi nào nên dùng HTTPS?
+Bất cứ khi nào bạn gửi thông tin nhạy cảm trên internet, chẳng hạn như:
++ Thông tin đăng nhập
++ Thông tin thẻ tín dụng
++ Thông tin cá nhân
+Hầu hết các trang web hiện nay đều sử dụng HTTPS. Bạn có thể nhận biết bằng cách nhìn vào thanh địa chỉ trình duyệt. Nếu thấy biểu tượng ổ khóa và "https://" ở đầu địa chỉ, nghĩa là trang web đó đang sử dụng HTTPS.
