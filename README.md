@@ -272,3 +272,56 @@ Nginx (engine x) là 1 phần mềm mã nguồn mở mạnh mẽ và phổ biế
 - nó cũng được sử dụng làm máy chủ proxy ngược trước các ứng dụng web như node.js, python, hay ruby để phân phối tải và bảo vệ các dịch vụ nội bộ
   
 9.APACHE
+
+9.1 APACHE HTTP SERVER 
+- Apache HTTP Server ( hay còn gọi là apache) là 1 phần mềm máy chủ web mã nguồn mở, có chức năng chính là phục vụ nọi dung web (trang html, hình ảnh, video, và các tài liệu khác) cho người dùng thông qua giao thức HTTP và HTTPS. Apache đóng vai trò là cầu nối giữa máy chủ lưu trữ nội dung (web server) và trình duyệt của người dùng (client) 
+9.2 Kiến trúc và tính năng
+- Modular architecture (kiến truc mô đun)
+	+ apache được thiết kế theo kiểu mô đun, giúp bạn dễ dàng bổ sung hoặc loại bỏ các tính năng theo nhu cầu. Ví dụ: mô đun ‘mid_ssl’ giúp hỗ trợ giao thức HTTPS, ‘mod_rewrite’ hỗ trợ rewrite URL, và ‘mod_proxy’ giúp apache hoạt động như 1 proxy server.
+	+ các mô đun có thể kích hoạt hoặc vô hiệu hóa thông qua tập tin cấu hình
+- Multi-Processing Modules (MPMs):
+	+ MPMs xác định cách Apache xử lý các yêu cầu đồng thời. Apache hỗ trợ nhiều MOM khác nhau, như ‘prefork’, ‘work’, và ‘event’. Mooix MPM có cách xử lý riêng biệt, từ việc taọ nhiều tiến trình con đến sử dụng các luồng (threads) để tăng hiệu suất.
+- configuration files (tập tin cấu hình)
+	+ apache đc cấu hình thông qua các tập tin như ‘ httpd.conf ’, nơi bạn có thể thiết lâpj mọi thứ từ cổng kết nối, thư mục gốc, đến các quy tắc rewrite URL.
+	+ ‘htaccess’: đây là 1 tập tin cấu hình cucj bộ, cho phép quản trị viên web thiết lập các quy tắc cụ thể cho từng thư mục mà không cần quy trập vào tập tin cấu hình chính ‘httpd.conf’.
+- Virtual hosts (máy chủ ảo)
+	+ apache cho phép bạn chạy nhiều trang web khacs nhau trên cùng 1 máy chủ vật lý thông qua tính năng virtual hosts. Bạn có thể cấu hình máy chủ ảo dựa trên tên miền (name-based virtual hosts) hoặc địa chỉ IP (IP - based virtual hosts)
+- SSL/TLS Support (hỗ trợ SSL/TLS)
+	+ apache hỗ trợ giao thức https thông qua mô đun ‘mod_ssl’, cho phép bảo mật thông tin truyền tải giữa máy chủ và trình duyệt bằng cách mã hóa dữ liệu
+- Load Balancing ( cân bằng tải 0 
+	+ apache có thể hoạt động như 1 máy chủ cân bằng tải, giúp phân phối lưu lượng truy cập đồng đều giữa nhiều máy chủ backend, tăng tính sẵn sàng và hiệu suất của ứng dụng web.
+- proxy features ( tính năng proxy )
+	+ với mô đun ‘mod_proxy’, apache có thể hoạt động như 1 proxy server, chuyển tiếp các yêu cầu từ người dùng tới các máy chủ khác, hỗ trợ caching, và tăng tốc độ truy cập.
+10.XAMPP
+XAMPP là 1 gói phần mềm mã  nguồn mở rất phổ biến, được sử dụng để thiết lập môi trường phát triển web cục bộ trên máy tính cá nhân. Đây là 1 công cụ hữu ích cho các nhà phát triển web, giúp họ dễ dàng cài đặt và quản lý 1 máy chủ web trên máy tính cá nhân mà không cần phải kết nối với internet.
+10.1 XAMPP là gì
+- X: Cross-platform (đa nền tảng ), có nghĩa là XAMPP có thể chạy trên nhiều hệ điều hành khác nhau, bao gồm windows, linux, và macOS
+- A: apache, 1 máy chủ web phổ biến nhất thế giới, dùng để phục vụ các trang web
+- M: MySQL hoặc MariaDB, 1 hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) dùng để lưu trữ và quản lý dữ liệu.
+- P: PHP, 1 ngôn ngữ lập trình phía máy chủ được sử dụng rộng rãi để phát triển các ứng dụng web rộng.
+P: Perl, 1 ngôn ngưx lập trình kịch bản hỗ trợ quản lý hệ thống và phát triển web.
+10.2 Các thành phần chính của XAMPP
+- apache:
+	+ là máy chủ web xử lý các yêu cầu HTTP từ trình duyệt và trả về các trang web
+	+ apache được tích hợp sẵn trong XAMPP, giúp bạn dễ dàng chạy trang web máy tính của mình
+- MySQL/MariaDB
+	+ MySQL là hệ quản trị cơ sở dữ liệu, dùng để lưu trữ dữ liệu của ưungs dụng web
+	+ mariaDB là 1 nhánh của MySQL và là phần mềm quản trị cơ sở dữ liệu mặc định trong các phiên ản XAMPP mới hơn.
+- PHP 
+	+ PHP là 1 ngôn ngữ lập trình được thiết kế đăc biệt cho phát triển web. XAMPP tích hợp sẵn PHP để bạn có thể viết và chạy các ứng dụng web động
+- Perl 
+	+ là 1 ngôn ngữ lập trình kịch bản, cũng được hỗ trợ trong XAMPP. Mặc dù ít phổ biến hơn PHP, Perl vẫn được sử dụng trong 1 sô tình huống nhất đinh, đặc việt là trong quản trị hệ thống và xử lý văn bản.
+- phpMyAdmin
+	+ phpMyAdmin là 1 công cụ quản trị cơ sở dữ liệu MySQL/MariaDB thông qua giao diện web. Nó giúp bạn dễ dàng thựuc hiện các tác vụ như tạo cơ sở dữ liệu, thêm bảng, quản lý dữ liệu mà không cần phải sử dụng dòng lệnh
+- Fille FTP Server:
+	+ 1 máy chủ FTP (File transfer protocol) đi kèm với XAMPP, giúp bạn quản lý các tệp trên máy chủ web của mình.
+- Tomcat
+	+ apache tomcat là 1 máy chủ web mã nguồn mở, được sử dụng triển khai các ứng dụng web Java. Tomcat không phải lúc nào cũng đc cài đặt mặc định, nhưng bạn có thể thêm nó nếu cần phát triển các ưngs dụng Java
+10.3 Nhược điểm
+- không phải là môi trường sản xuất: xampp đc thiết kế để sử dụng trong môi trường phát triên, không phải trong môi trường sản xuất (production). Nó thiếu các tính năng bảo mật và tối ưu hóa mà bạn cần cho 1 máy chủ thực tế.
+- Hiệu suất: trong 1 số trường hợp, XAMPP có thể không hoạt động tối ưu hoặc không tương thích hoàn toàn với môi trường sản xuất thực tế, dẫn đến các vấn đè khi triển khai ứng dụng lên máy chủ
+10.4 Cách chuyển từ XAMPP sang máy chủ thực tế
+Sau khi phát triênr ứng dụng web trên XAMPP, bạn cần chuyển nó sang 1 máy chủ thực tế (production server) 
+- chuyển các tệp web từ XAMPP lên máy chủ: bạn có thể sử dụng FTP hoặc các công cụ tương tự để tải các tệp lên máy chủ thực tế.
+- chuyển cơ sở dữ liệu: sử dung công cụ phpAdmin để xuất cơ sở dữ liệu từ XAMPP và nhập nó vào cơ sở dữ liệu trên máy chủ thực tế.
+- kiểm tra câus hình: đảm bảo rằng tất cả các cấu hình như đường dẫn, quuyền truy cập, và cấu hình máy chủ đã được điều chỉnh phù hợp cho môi trường sản xuất.
