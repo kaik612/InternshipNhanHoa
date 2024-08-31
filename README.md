@@ -64,6 +64,7 @@ II.Công nghệ ứng dụng
 1.Tên miền (Domain)
 
 1.1Khái niệm
+
 - Tên miền là địa chỉ duy nhất của 1 trang web trên internet, hoạt động như 1 “địa chỉ nhà” cho trang web. Nó giúp người dùng có thể dễ dàng truy cập vào trang web của bạn mà không cần phải ghi nhớ địa chỉ IP (Internet Protocol), 1 dãy số phức tạp. 	+ VD: thay vì nhớ địa chỉ IP như ‘192.0.2.1’, người dùng có thể gõ 	‘google.com’ để truy cập Google.
 
 1.2Cấu trúc tên miền
@@ -72,42 +73,49 @@ II.Công nghệ ứng dụng
 	+ VD: [subdomain].domain-name.tld
 
 - Các phần của tên miền:
+- 
 	+ Subdomain (Tên miền phụ): là phần tùy chọn, nằm trước tên miền chính. 	VD: blog.example.com, blog là tên miền phụ.
 	+ Domain Name (Tên miền chính): là phần chính của tên miền mà bạn đăng 	ký. VD: example.com, example là tên miền chính.
 	+ TLD (Top-Level-Domain - Tên miền cấp cao nhất): là phần cuối của tên 	miền. Các TLD phổ biến bao gồm: .com, .net, .org, .vn, ...
 	
 - Phân biệt cac tên miền cao cấp (TLD)
+- 
 	+ gTLD (generic TLDs - tên miền cấp cao chung): là những TLD phổ biến 	và không giới hạn về mặt địa lý hay tổ chức.
 		VD: .com: dành cho thương mại
 		 .net: dành cho mạng lưới network
 		 .org: dành cho tổ chức phi lợi nhuận
 		 .info: dành cho thông tin
 		 .biz: dành cho doanh nghiệp
+   
 	+  ccTLD (country code TLDs - tên miền cấp cao mã quốc gia): là những 	TLD được dành riêng cho các quốc gia hoặc vùng lãnh thổ 
 		VD: .vn: Việt Nam
 		        .us: Hoa Kỳ
+    
 	+ sTLD (sponsored TLDs -  tên miền cấp cao có tài trợ): là những TLD được 	tài trợ bởi tổ chức hoặc cộng đồng nhất định
 	VD: .edu: dành cho giáo dục
 	. gov: dành cho cơ quan chính phủ
 	.mil: dành cho quân đội
+
 - Tên miền phụ: giúp phân chia các phần khác nhau của website hoặc hệ thống
 VD: blog.example.com và store.example.com
 
 1.3Cách thưcs hoạt động của tên miền
 
-- DNS là hệ thống phần giải tên miền sang địa chỉ IP. Khi bạn nhập 1 tên miền vào trình duyệt, DNS sẽ chuyển đổi tên miền đó thành địa chỉ IP tương ứng để máy tính có thể tìm thấy và truy cập vào máy chủ của trang web. 
+- DNS là hệ thống phần giải tên miền sang địa chỉ IP. Khi bạn nhập 1 tên miền vào trình duyệt, DNS sẽ chuyển đổi tên miền đó thành địa chỉ IP tương ứng để máy tính có thể tìm thấy và truy cập vào máy chủ của trang web.
+- 
 - Quá trình phân giải tên miền:
+  
 	+ trình duyệt gửi yêu cầu phân giải tên miền đến máy chủ DNS gần nhất.
-	+ máy chủ DNS tra cứu tên miền trong cơ sở dữ liệu của nó. Nếu không tìm 	thấy, nó sẽ chuyển yêu cầu lên máy chủ DNS cấp cao hơn.
-+ khi tìm thấy địa chỉ IP tương ứng, máy chủ DNS gửi lại địa chỉ IP cho trình 	duyệt.
-+ trình duyệt sử dụng địa chỉ IP để gửi yêu cầu đến máy chủ web lưu trữ nội 	dụng của trang web
-+ máy chủ web trả về nội dung của trang web để hiển thị trên trình duyệt của 	bạn 
+	+ máy chủ DNS tra cứu tên miền trong cơ sở dữ liệu của nó. Nếu không tìm thấy, nó sẽ chuyển yêu cầu lên máy chủ DNS cấp cao hơn.
+	+ khi tìm thấy địa chỉ IP tương ứng, máy chủ DNS gửi lại địa chỉ IP cho trình duyệt.
+	+ trình duyệt sử dụng địa chỉ IP để gửi yêu cầu đến máy chủ web lưu trữ nội dụng của trang web
+	+ máy chủ web trả về nội dung của trang web để hiển thị trên trình duyệt của bạn 
 
 -  Các thành phần của hệ thống DNS
 	+ Root Name Server: máy chủ gốc quản lí các thông tin về TLD và chuyển 	tiếp yêu cầu đến TLD Name Server.
-	+ TLD Name Server: máy chủ quản lý các tên miền thuộc TLD cụ thể, 	VD: .com, .vn .
-	+ Authoritative Name Server: máy chủ có quyền trả lời cuối cùng cho yêu 	cầu DNS của 1 tên miền cụ thể.
-	+ DNS Resolver: máy chủ thực hiện quá trình phân giải tên miền, từ việc tìm 	kiếm thông tin trreen các máy chủ khác cho đến khi tìm được địa chỉ IP 		tương ứng.
+	+ TLD Name Server: máy chủ quản lý các tên miền thuộc TLD cụ thể, VD: .com, .vn .
+	+ Authoritative Name Server: máy chủ có quyền trả lời cuối cùng cho yêu cầu DNS của 1 tên miền cụ thể.
+	+ DNS Resolver: máy chủ thực hiện quá trình phân giải tên miền, từ việc tìm kiếm thông tin trreen các máy chủ khác cho đến khi tìm được địa chỉ IP tương ứng.
 
 - Quy trình hoạt động của DNS
 	+ Người dùng nhập tên miền vào trình duyệt
@@ -118,12 +126,14 @@ VD: blog.example.com và store.example.com
 	+ Trình duyệt sử dụng địa chỉ IP để truy cập web từ máy chủ web
 
 1.4Quy trình đăng ký và quản lý tên miền
+
 - Quy trình đăng ký tên miền
 a)Chọn nhà đăng ký tên miền
 b)Kiểm tra tính khả dụng
 c)Đăng ký tên miền
 d)Thanh toán
 e)Xác nhận đăng ký
+
 - Quản lý tên miền
 Một số công cụ quản lí tên miền:	
 	+ cPanel/WHM: giao diện quản lý hosting và DNS phổ biến
@@ -161,66 +171,83 @@ Mạng (Ảo hóa mạng): Kết hợp tài nguyên mạng phần cứng và ph�
  
 4.Cloud computing
 Cloud computing là mô hình phân phối dịch vụ điện toán qua internet, cho phép người dùng truy cập và sử dụng tài nguyên điện toán (như máy chủ, lưu trữ, cơ sở dữ liệu, mạng, phần mềm) mà không cần đầu tư và quản lý hạ tầng vật lý.
+
 Các mô hình dịch vụ trong cloud computing
-Infrastructure as a Service (IaaS)
-IaaS cung cấp cơ sở hạ tầng máy tính ảo hóa qua internet. Người dùng có thể thuê các tài nguyên như máy chủ, lưu trữ và mạng lưới mà không cần mua và duy trì hạ tầng vật lý. Ví dụ: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform.
-Platform as a Service (PaaS)
-PaaS cung cấp một nền tảng phát triển và triển khai ứng dụng trên cloud. Người dùng có thể phát triển, chạy và quản lý ứng dụng mà không cần lo lắng về việc quản lý cơ sở hạ tầng. Ví dụ: Google App Engine, Microsoft Azure App Services, Heroku.
-Software as a Service (SaaS)
-SaaS cung cấp phần mềm ứng dụng qua internet. Người dùng có thể sử dụng ứng dụng mà không cần cài đặt và quản lý trên máy tính cá nhân. Ví dụ: Google Workspace (Gmail, Google Docs), Microsoft Office 365, Salesforce.
+
+Infrastructure as a Service (IaaS) cung cấp cơ sở hạ tầng máy tính ảo hóa qua internet. Người dùng có thể thuê các tài nguyên như máy chủ, lưu trữ và mạng lưới mà không cần mua và duy trì hạ tầng vật lý. Ví dụ: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform.
+
+Platform as a Service (PaaS) cung cấp một nền tảng phát triển và triển khai ứng dụng trên cloud. Người dùng có thể phát triển, chạy và quản lý ứng dụng mà không cần lo lắng về việc quản lý cơ sở hạ tầng. Ví dụ: Google App Engine, Microsoft Azure App Services, Heroku.
+
+Software as a Service (SaaS) cung cấp phần mềm ứng dụng qua internet. Người dùng có thể sử dụng ứng dụng mà không cần cài đặt và quản lý trên máy tính cá nhân. Ví dụ: Google Workspace (Gmail, Google Docs), Microsoft Office 365, Salesforce.
+
 Các loại triển khai cloud computing
-Public Cloud
+
 Public cloud là mô hình dịch vụ cloud mà các tài nguyên được chia sẻ giữa nhiều người dùng và được cung cấp bởi một nhà cung cấp dịch vụ bên thứ ba. Các nhà cung cấp thường cung cấp tài nguyên qua internet và người dùng chỉ trả phí cho những tài nguyên mà họ sử dụng.
-Private Cloud
+
 Private cloud là mô hình dịch vụ cloud được sử dụng độc quyền bởi một tổ chức. Nó có thể được quản lý nội bộ hoặc bởi một nhà cung cấp dịch vụ bên ngoài. Private cloud thường được sử dụng bởi các tổ chức cần bảo mật cao và kiểm soát chặt chẽ dữ liệu.
-Hybrid Cloud
+
 Hybrid cloud kết hợp giữa public cloud và private cloud, cho phép các tổ chức tận dụng cả hai loại mô hình để đạt được hiệu quả cao nhất. Ví dụ, một tổ chức có thể sử dụng public cloud cho các tác vụ không quan trọng và private cloud cho dữ liệu nhạy cảm.
 
 5.Container
+
 Là công nghệ giúp đóng gói và triển khai ứng dụng cùng với tất cả các thành phần phụ thuộc của nó (thư viện, cấu hình, ...) vào 1 đơn vị duy nhất. Điều này đảm bảo rằng ứng dụng chạy nhất quán trên bâts kỳ môi trường nào, từ máy tính cá nhân đến máy chủ trong các trung tâm dữ liệu.
+
 5.1 Các đặc điểm chính của container
 - Đóng gói (Packaging): ứng dụng và tất cả các thành phần phụ thuộc được đóng gói vào 1 container duy nhất. Điều này giúp tránh các vấn đề về “nó hoạt động trên máy của tôi” vì môi trường chạy luôn nhất quán.
 - nhẹ (lightweight): container chia sẻ hệ điều hành của máy chủ chủ quản (host), chỉ bao gồm những thành phần cần thiết cho ứng dụng, làm cho chúng nhẹ hơn và khởi động nhanh hơn so với máy ảo (virtual machine)
 - tách biệt (isolation): cung cấp sự tách biệt giữa các ứng dụng và mội trường của chúng, giúp tránh xung đột giữa các ứng dụng chạy tren cùng 1 máy chủ.
 - di động (portable): có thể dễ dàng di chuyển giữa các môi trường khác nhau ( phát triển, thử nghiêm, sản xuất) mà không cần thay đổi hoặc điều chỉnh.
+
 5.2 So sánh Container và Máy ảo
 - Máy ảo: 
-	+ mỗi máy ảo chạy trên 1 hệ điều hành riêng biệt, bao gồm cả kernel, làm 	cho chúng nặng và tiêu tốn tài nguyên.
+	+ mỗi máy ảo chạy trên 1 hệ điều hành riêng biệt, bao gồm cả kernel, làm cho chúng nặng và tiêu tốn tài nguyên.
 	+ khởi động chậm hơn do cần khởi động toàn bộ hệ điều hành.
+
 - container:
-	+ container chia sẻ karnel của hệ điều hành chủ quản, chỉ chứa các thành 	phần cần thiết cho ứng dụng, làm cho chúng nhẹ và khởi động nhanh.
+	+ container chia sẻ karnel của hệ điều hành chủ quản, chỉ chứa các thành phần cần thiết cho ứng dụng, làm cho chúng nhẹ và khởi động nhanh.
 	+ tiêu tốn ít tài nguyên hơn so với máy ảo
+
 5.3 Công nghệ phổ biến
 - Docker:
-	+ là nền tảng container phổ biến nhất, cung cấp công cụ và dịch vụ để xây 	dựng, đóng gói và chạy container
+	+ là nền tảng container phổ biến nhất, cung cấp công cụ và dịch vụ để xây dựng, đóng gói và chạy container
 - Kubernetes
-	+ là 1 hệ thống điều phối container ( container oschestration) mã nguônf mở, 	giúp quản lý và tự động hóa việc triển khai, mở rộng và vận hành các 	container. 
+	+ là 1 hệ thống điều phối container ( container oschestration) mã nguônf mở, giúp quản lý và tự động hóa việc triển khai, mở rộng và vận hành các container.
+
 6.Hệ điều hành
-Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa phần cứng của máy tính và các ứng dụng người tiêu dùng. Hệ điều hành quản lý tài nguyên máy tính, cung cấp các dịch vụ cần thiết cho các chương trình ứng dụng và người dùng. 
+
+Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa phần cứng của máy tính và các ứng dụng người tiêu dùng. Hệ điều hành quản lý tài nguyên máy tính, cung cấp các dịch vụ cần thiết cho các chương trình ứng dụng và người dùng.
+
 6.1 Khái niệm
 - Quản lí tiến trình (Process management):
 	+ điều phối các tiến trình và luồng xử lí, bao gồm việc tạo, hủy và chuyển đổi giữa các tiến trình.
 	+ cung cấp cơ chế đồng bộ hóa và liên lạc giữa các tiến trình (IPC - Inter process communication)
+
 - Quản lí bộ nhớ(memory management):
 	+ phân bổ và giải phóng bộ nhớ cho các tiến trình.
 	+ sử dụng các kỹ thuật như phân tran (paging) hoặc phân đoạn (segmentation) để quản lí không gian bộ nhớ hiệu quả.
+
 - Quản lí thiết bị (device management):
 	+ điều khiển và quản lí các thiết bị ngoại vi như ổ đĩa, máy in, ...
 	+ đảm bảo các thiết bị được truy cập và sử dụng 1 cách đồng bộ và hiệu quả.
+
 - Quản lí tập tin (file management):
 	+ quản lí cấu trúc lưu trữ, truy cập và bảo mật của các tập tin và thư mục
 	+ cung cấp các thao tác cơ bản như tạo, xóa, đọc, ghi và đổi tệp tin.
+
 - bảo mật và quản lí người dùng (security and user management): 
 	+ đảm bảo an toàn dữ liệu
 	+ xác thực và phân quyền cho người dùng
+
 - giao diện người dùng (user interface):
-	+ cung cấp giao diện dòng lệnh (CLI) hoặc giao diện đồ họa (GUI) để người 	dùng tương tác với hệ thống. 
+	+ cung cấp giao diện dòng lệnh (CLI) hoặc giao diện đồ họa (GUI) để người dùng tương tác với hệ thống.
+
 6.2 Các loại hệ điều hành
 - hệ điều hành đa nhiệm (Multitasking OS)
 - hệ điều hành thời gian thực (Real-time OS)
 - hệ điều hành đơn nhiệm (Single-tasking OS)
 - hệ điều hành phân tán (Distributed OS)
 - hệ điều hành nhúng (Embedded OS)
+  
 6.3 Các hệ điều hành sử dụng trong doanh nghiệp
 - Windows: phổ biến từu doanh nghiệp nhỏ đến lớn nhờ vào sự đa dạng và khả năng tưởng thích ứng dụng kinh doanh. Sử dụng windows server để quản lí mạng, DB và dịch vụ khác
 - Linux: sử dụng trong các máy chủ, DB và hệ thống nhúng. Vì có sự ổn định và khả năng tùy chỉnh cao. Chi phí thấp hơn so với windows.
@@ -229,6 +256,7 @@ Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa 
 - Hệ đièu hành di động:
 	+ IOS: sử dụng trong thiết bị của Apple.
 	+ Android: sử dụng rộng trong các thiết bị di động của nhiều hãng sản xuất.
+
 7.Hệ điều hành Linux
 - Linux là một hệ điều hành mã nguồn mở, có nghĩa là mã nguồn của nó được công khai và người dùng có thể tự do sử dụng, sửa đổi và phân phối lại. Linux được phát triển dựa trên hệ điều hành Unix và thường được sử dụng trên các máy chủ, máy tính cá nhân, thiết bị nhúng và nhiều hệ thống khác.
 - Các đặc điểm nổi bật của Linux
@@ -246,6 +274,7 @@ Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa 
 
 8.NGINX
 Nginx (engine x) là 1 phần mềm mã nguồn mở mạnh mẽ và phổ biến, được sử dụng chủ yếu như 1 máy chủ web (web server) nhưng cũng có thể đảm nhận nhiều vai trò khác nhau như máy chủ proxy ngược (reverse proxy server), máy chủ proxy email (email proxy server), và cân bằng tải (load balancer). Nginx được biết đến với khả năng xử lý đồng thời 1 số lượng lớn kết nối với hiệu suất cao, ít tiêu tốn tài nguyên, tính ổn định tốt. 
+
 8.1 Các chức năng chính của Nginx
 - Máy chủ web (web server)
 	+ nginx có thể phục vụ các tệp tĩnh như HTML, CSS, JavaScript, hình ảnh 	và video. Nó nổi bật với khả năng xử lí 1 lượng lớn kết nối đồng thời mà 	không tiêu tốn nhiều tài nguyên.
@@ -349,36 +378,42 @@ Hầu hết các trang web hiện nay đều sử dụng HTTPS. Bạn có thể 
 
 12.SSH
 SSH ( Secure Shell ) là 1 giao thức mạng được sử dụng để thiết lập kết nối an toàn giữa 2 máy tính. Nó được sử dụng phổ biến để đăng nhập từ xa vaò các hệ thống máy chủ, truyền tải file, và thực hiện các lệnh từ xa 1 cách an toàn.
+
 12.1 Các khái niệm cơ bản về SSH
 - Bảo mật: SSH mã hóa toàn bộ giữ liệu trao đổi giữa máy client ( máy người dùng )
 và máy server (máy chủ), giúp bảo vệ thông tin khỏi bị đánh cắp hoặc theo dõi bởi các kẻ tấn công. 
 - Xác thực: khi kết nối SSH, người dùng phải cung cấp thông tin đăng nhập (thường là username và mật khẩu) hoặc sử dụng cặp khóa công khai và khóa riêng tư để xác thực. Phương pháp xác thực bằng khóa thường an toàn hơn.
 - Cổng mặc định: SSH thường sử dụng cổng 22 để kết nối. Tuy nhiên, quản trị viên có thể thay đổi cổng này để tăng cường bảo mật. 
 - Tạo cặp khóa SSH:
-	+ Khóa riêng tư (Private key): đc giữ bí mật trên máy client và khôg bao giờ 	đc chia sẻ.
-	+ Khóa công khai (Public key): đc tới máy server và lưu trữ tại đó. Khi 	người dùng cố gắng đăng nhập, máy server sẽ sử dụng khóa công khai để xác 	minh khóa riêng tư.
+	+ Khóa riêng tư (Private key): đc giữ bí mật trên máy client và khôg bao giờ đc chia sẻ.
+	+ Khóa công khai (Public key): đc tới máy server và lưu trữ tại đó. Khi người dùng cố gắng đăng nhập, máy server sẽ sử dụng khóa công khai để xác minh khóa riêng tư.
 - Các ứng dụng phổ biến của SSH
-	+ đăng nhập từ xa: quản trị hệ thống có thể đăng nhập vào máy chủ từ xa và 	thực hiện các lệnh như thể họ đang ngồi trc máy chủ đó
-	+ truyền file: SSH có thể đc sử dung để truyền file an toàn giữa các máy 	thông qua các công cụ như SCP (Secure Copy) hoặc SFTP (SSH file tranfer 	protocol)
-	+ tunneling: SSH có thể tạo các kênh (tunnel) để truyền dữ liệu của các giao 	thưc khác qua 1 kết nối an toàn.
+	+ đăng nhập từ xa: quản trị hệ thống có thể đăng nhập vào máy chủ từ xa và thực hiện các lệnh như thể họ đang ngồi trc máy chủ đó
+	+ truyền file: SSH có thể đc sử dung để truyền file an toàn giữa các máy thông qua các công cụ như SCP (Secure Copy) hoặc SFTP (SSH file tranfer protocol)
+	+ tunneling: SSH có thể tạo các kênh (tunnel) để truyền dữ liệu của các giao thưc khác qua 1 kết nối an toàn.
+
 12.2 Lợi ích
 - bảo mật cao: tất cả dữ liệu đều được mã hóa.
 - linh hoạt: có thể sử dụng để quản lí từ xa, truyền tải dữ liệu, và nhiều ứng dụng khác.
 - dễ sử dụng: với sự hỗ trợ rộng rãi từ các hệ điều hành và công cụ, SSH rất dễ để triển khai và sử dụng
+  
 13.Tìm hiểu rộng hơn về SaaI
 - IaaS ( Infrastureture as Service ) là 1 trong 3 mô hình chính của dịch vụ điện toán đám mây, cung với PaaS ( platform as a service ) và SaaS (software as a service ). IaaS cung cấp hạ tầng IT như máy chủ, lưu trưc, mạng và các tài nguyên điện toán khác thông qua Internet. Thay vì phải mua và quản lý phần cứng vật lý, người dùng có thể thuê các tài nguyên này từ nhà cung cấp dịch vụ đám mây và chỉ trả tiền dựa trên mức độ sử dụng. 
 - Đặc điểm chính của IaaS:
-	+ tính linh hoạt: người dùng có thể tăng hoặc giảm tài nguyên ( máy chủ, lưu 	trữ, ..) theo nhu cầu mà không cần đầu từ vào cở sở hạ tầng vật lý.
-	+ thanh toán theo mức sử dụng: thay vì phải mua toàn bộ cơ sở hạ tầng, 	người dùng chỉ trả tiền cho những tài nguyên mà họ thực sự sử dụng.
- 	+ quản lý tự động: các nhà cung cấp IaaS thường cung cấp các công cụ quản 	lý tự động, giúp người dùng dễ dàng triển khai, quản lý và mở rộng hệ thống 	của mình
-	+ truy cập từ xa: các tài nguyên IaaS có thể truy cập từ bất kỳ đâu thông qua 	Internet.
+	+ tính linh hoạt: người dùng có thể tăng hoặc giảm tài nguyên ( máy chủ, lưu trữ, ..) theo nhu cầu mà không cần đầu từ vào cở sở hạ tầng vật lý.
+	+ thanh toán theo mức sử dụng: thay vì phải mua toàn bộ cơ sở hạ tầng, người dùng chỉ trả tiền cho những tài nguyên mà họ thực sự sử dụng.
+ 	+ quản lý tự động: các nhà cung cấp IaaS thường cung cấp các công cụ quản lý tự động, giúp người dùng dễ dàng triển khai, quản lý và mở rộng hệ thống 	của mình
+	+ truy cập từ xa: các tài nguyên IaaS có thể truy cập từ bất kỳ đâu thông qua Internet.
 - 1 số nhà cung cấp IaaS phổ biến:
 	+ Amazon Web Services (AWS)
 	+ Microsoft Azure
 	+ Google cloud platform (GCP)
 	+ IBM cloud
+
 14.Cách trỏ tên miền
+   
 15.Các email server
+
 15.1 kerio
 Kerio Connect (hay còn gọi là Kerio MailServer) là một giải pháp email server phổ biến, được thiết kế dành cho các doanh nghiệp vừa và nhỏ. Đây là một nền tảng kết hợp giữa email, lịch, danh bạ, và các tính năng hợp tác khác, với mục tiêu cung cấp một giải pháp thay thế dễ sử dụng và quản lý cho các hệ thống email server phức tạp như Microsoft Exchange.
 - Tổng quan về Kerio Connect
@@ -403,6 +438,7 @@ Khả năng tương thích: Kerio Connect có thể chạy trên nhiều nền t
 
 Kết luận
 Kerio Connect là một giải pháp email server toàn diện, phù hợp cho doanh nghiệp vừa và nhỏ nhờ vào tính dễ sử dụng, chi phí hợp lý, và khả năng đáp ứng các nhu cầu cơ bản về email, lịch và bảo mật. Tuy nhiên, nếu doanh nghiệp có yêu cầu cao hơn hoặc số lượng người dùng lớn, cần cân nhắc các giải pháp khác mạnh mẽ hơn.
+
 15.2 zimbra
 Zimbra là 1 hệ thống email và lịch làm việc mã nguồn mở được thiết kể cho doanh nghiệp. Nó cung cấp các chức năng quản lý email, danh bạ, lịch, nhiệm vụ và file chia sẻ, tất cả được tích hợp trong 1 giao diện duy nhất. Zimbra có thể triển khai trên môi trường tại chỗ (on-premises) hoặc đám mây.
 - Các thành phần chính:
@@ -430,76 +466,84 @@ Zimbra được sử dụng phổ biến trong các tổ chức doanh nghiệp, 
 15.3 MDaemon 
 MDaemon là 1 phần mềm quản lý email server được phát triển bởi Alt-N Technologies, cung cấp giải pháp toàn diện cho việc gửi và nhận email trong môi trường doanh nghiệp. 
 - Chức năng chính:
-	+ email server: quản lý việc gưir và nhận email cho các tên miền và tài 	khoản email
-	+ webmail: giao diện web cho người dùng truy cập email từ trình duyệt, hỗ 	trợ quản lý email, lịch, danh bạ và tác vụ
-	+ bảo mật: MDaemon cung cấp nhiều tính năng bảo mật bao gồm chống 	spam, mã hóa email, chôngs virus và xác thực người gửi (DKIM, SPF)
-	+ Quản trị từ xa: hỗ trợ quản trị hệ thống thông qua giao diện web quản trị 	viên, giúp quản lý từ xa.
+	+ email server: quản lý việc gưir và nhận email cho các tên miền và tài khoản email
+	+ webmail: giao diện web cho người dùng truy cập email từ trình duyệt, hỗ trợ quản lý email, lịch, danh bạ và tác vụ
+	+ bảo mật: MDaemon cung cấp nhiều tính năng bảo mật bao gồm chống spam, mã hóa email, chôngs virus và xác thực người gửi (DKIM, SPF)
+	+ Quản trị từ xa: hỗ trợ quản trị hệ thống thông qua giao diện web quản trị viên, giúp quản lý từ xa.
 - các tính năng nổi bật
-	+ chống spam và virus: tích hợp các công cụ chôngs spam và virus mạnh mẽ 	như SpamAssasin, ClamAV giúp bảo vệ hệ thống email khỏi thư rác và phần 	mềm độc hại
-	+ hỗ trợ nhiều giao thức email: POP3, IMAP, SMTP, ActiveSync giúp người 	dùng truy cập email từ nhiêu thiết bị khác nhau (máy tính, điện thoại)
+	+ chống spam và virus: tích hợp các công cụ chôngs spam và virus mạnh mẽ như SpamAssasin, ClamAV giúp bảo vệ hệ thống email khỏi thư rác và phần 	mềm độc hại
+	+ hỗ trợ nhiều giao thức email: POP3, IMAP, SMTP, ActiveSync giúp người dùng truy cập email từ nhiêu thiết bị khác nhau (máy tính, điện thoại)
 	+ mã hóa email: sử dụng MDaemon SecurityPlus để mã hóa email, đảm bảo 	tính bảo mật trong quá trình truyền tải thông tin
 	+ tính năng lưu trữ email: tích hợp tính năng lưu trữ email giúp doanh nghiệp 	lưu giữ các email quan trọng 1 cách an toàn.
 - ưu điểm: 
-	+ dễ cài đặt và sử dụng: MDaemon có giao diện trực quan, dễ dàng thiết lập 	và quản lý ngay cả với những người không chuyên về ký thuật
+	+ dễ cài đặt và sử dụng: MDaemon có giao diện trực quan, dễ dàng thiết lập và quản lý ngay cả với những người không chuyên về ký thuật
 	+ khả năng mở rộng: phù hợp cho cả các doanh nghiệp nhỏ và lớn, có thể 	quản lý hàng ngàn người dùng mà không gặp khó khăn
-	+ chi phí hợp lý: cung cấcp các gói giá phù hợp với nhu cầu của từng doanh 	nghiệp, bao gồm cả phiên bản miễn phí và trả phí.
+	+ chi phí hợp lý: cung cấcp các gói giá phù hợp với nhu cầu của từng doanh nghiệp, bao gồm cả phiên bản miễn phí và trả phí.
 - Nhược điểm:
-	+ chạy trên windows: MDaemon chủ yếu đc phát triển cho hệ điều hành 	Windows, do đó hạn chế với các hệ thống sử dụng Linux hoặc macOS
-	+ Tính năng hạn chế: mặc dù cung cấp nhiều tính năng cơ bản cho email 	server, nhưng có thể không đầy đủ cho các doanh nghiệp có yêu cầu đặc biệt 	cao về quản trị và tích hợp hệ thống phức tạp.
+	+ chạy trên windows: MDaemon chủ yếu đc phát triển cho hệ điều hành Windows, do đó hạn chế với các hệ thống sử dụng Linux hoặc macOS
+	+ Tính năng hạn chế: mặc dù cung cấp nhiều tính năng cơ bản cho email server, nhưng có thể không đầy đủ cho các doanh nghiệp có yêu cầu đặc biệt cao về quản trị và tích hợp hệ thống phức tạp.
 - Kết luận: MDaemon là giải pháp email server toàn diện, bảo mật và dễ quản lý cho các doanh nghiệp vừa và nhỏ. Với tính năng bảo mật tốt, quản lý dễ dàng và chi phí hợp lý, đây là một lựa chọn lý tưởng cho các doanh nghiệp cần một giải pháp email nội bộ ổn định và hiệu quả.
 
 16.Mô hình OSI và TCP/IP
+
 16.1 Khái niệm OSI 
 Mô hình OSI (Open Systems Interconnection) là 1 khung mô tả các chức năng của hệ thống mạng máy tính qua 7 tầng khác nhau. Mỗi tầng thực hiện 1 vai trò cụ thể trong việc truyền và nhận dữ liệu qua mang.
+
 16.2 Các Layer
+
 - Tầng vật lý ( Physical Layer)
-	+ Chức năng: chuyển đổi dữ liệu thành tín hiệu vật lý ( điện, quang học, vô tuyến) 	để truyền qua các phương tiện vật lý như dây cáp, sóng vô tuyến.
+	+ Chức năng: chuyển đổi dữ liệu thành tín hiệu vật lý ( điện, quang học, vô tuyến) để truyền qua các phương tiện vật lý như dây cáp, sóng vô tuyến.
 	+ Ví dụ: các loại cáp mang, hub, repeater.
 - Tầng liên kết dữ liệu ( Data Link Layer)
-	+ Chức năng: đảm bảo dữ liệu truyền đi 2 thiết bị lân cận trong cùng 1 mạng (local 	network) không bị lỗi. Đóng gói dữ liệu thành các khung (frame) và xử lý các lỗi 	phát sinh từ tầng vật lý.
+	+ Chức năng: đảm bảo dữ liệu truyền đi 2 thiết bị lân cận trong cùng 1 mạng (local network) không bị lỗi. Đóng gói dữ liệu thành các khung (frame) và xử lý các lỗi phát sinh từ tầng vật lý.
 	+ VD: Switch, Ethernet, Wi-fi.
 - Tầng mạng ( Network Layer )
 	+ Chức năng: chịu trách nhiệm định tuyến các gói dữ liệu từ nguồn đến đích, có thể đi qua nhiều mạng trung gian. Sử dụng địa chỉ IP để xác định địa chỉ của các thiết bị
 	+ VD: router, IP, ICMP
 - Tầng giao vận (Transport Layer)
-	+ Chức năng: đảm bảo dữ liệu được truyền đi đáng tin cậy giữa 2 thiết bị, xử lý 	việc kiểm soát luồng giữ liệu và kiểm soát lỗi từ đầu cuối đến đầu cuối. Sử dụng 	các giao thức như TCP (đáng tin cậy) và UDP (Không đáng tin cậy)
+	+ Chức năng: đảm bảo dữ liệu được truyền đi đáng tin cậy giữa 2 thiết bị, xử lý việc kiểm soát luồng giữ liệu và kiểm soát lỗi từ đầu cuối đến đầu cuối. Sử dụng các giao thức như TCP (đáng tin cậy) và UDP (Không đáng tin cậy)
 	+ VD: TCP, UDP 
 - Tầng phiên (session layer)
-	+ chức năng: quản lý phiên kết nối giữa 2 thiết bị, duy trì và đồng bộ hóa quá trình 	trao đổi dữ liệu. Xử lí việc mở, duy trì và kết thúc các phiên giao tiếp.
+	+ chức năng: quản lý phiên kết nối giữa 2 thiết bị, duy trì và đồng bộ hóa quá trình trao đổi dữ liệu. Xử lí việc mở, duy trì và kết thúc các phiên giao tiếp.
 	+ VD: giao thức NetBIOS, RPC.
 - Tầng trình bày ( Presentation Layer )
-	+ chức năng: chuyển đổi dữ liệu giữa các định dạng khác nhau để đảm bảo dữ liệu 	từ ứng dụng của 1 hệ thống có thể được hiểu bởi ứng dụng của hệ thống khác. Xử ý 	mã hóa, giải mã, nén và giải nén dữ liệu.
+	+ chức năng: chuyển đổi dữ liệu giữa các định dạng khác nhau để đảm bảo dữ liệu từ ứng dụng của 1 hệ thống có thể được hiểu bởi ứng dụng của hệ thống khác. Xử ý mã hóa, giải mã, nén và giải nén dữ liệu.
 	+ VD: SSL/TLS, mã hóa dữ liệu, JPEG, ASCII
 - Tầng ứng dụng ( Application Layer )
 	+ chức năng: cung cấp giao diện trực tiếp với người dùng và các ứng dụng để sử 	dụng các dịch vụ mạng. Đây là tầng mà người dùng tương tác trực tiếp thông qua 	các ứng dụng.
 	+ VD: HTTP, FTP, SMTP, DNS
+
 16.3 Khái niệm mô hình TCP/IP
 Mô hình TCP/IP ( Transmission Control Protocol/Internetee Protocol ) là 1 khung mô tả cách các dữ liệu được truyền tải qua mạng máy tính, đặc biệt là mạng internet. Mô hình này gồm 4 tầng chính, mỗi tầng thực hiện 1 chức năng cụ thể.
+
 16.4 Các Layer
 - Tầng giao tiếp mạng ( Network Interface Layer )
-	+ Chức năng: chịu trách nhiệm truyền dữ liệu giữa các thiết bị trên cùng 1 mạng vật 	lý. Tầng này tương ứng với tầng vật lý và liên kết dữ liệu trong mô hình OSI
+	+ Chức năng: chịu trách nhiệm truyền dữ liệu giữa các thiết bị trên cùng 1 mạng vật lý. Tầng này tương ứng với tầng vật lý và liên kết dữ liệu trong mô hình OSI
 	+ VD: Ethernet, Wi-fi, ARP (Address Réolution Protocol)
 - Tầng Internet (Internet Layer)
-	+ Chức năng: định tuyến các gói dữ liệu từ thiết bị gửi đến thiết bị nhận qua nhiều 	mạng trung gian. Tầng này sử dụng địa chỉ IP để xác định vị trí đích của dữ liệu
-	+VD: IP, ICMP (Internet Control Message Protocol), ARP (Address Resolution 	Protocol)
+	+ Chức năng: định tuyến các gói dữ liệu từ thiết bị gửi đến thiết bị nhận qua nhiều mạng trung gian. Tầng này sử dụng địa chỉ IP để xác định vị trí đích của dữ liệu
+	+VD: IP, ICMP (Internet Control Message Protocol), ARP (Address Resolution Protocol)
 - Tầng Giao vận ( Transport Layer)
-	+ Chức năng: quản lý việc truyền dữ liệu từ đầu cuối này đến đầu cuối khác. Tầng 	này đảm bảo dữ liệu được truyền tải đúng thứ tự, không bị mất mát và quản lý các 	kết nối giữa các ứng dụng
+	+ Chức năng: quản lý việc truyền dữ liệu từ đầu cuối này đến đầu cuối khác. Tầng này đảm bảo dữ liệu được truyền tải đúng thứ tự, không bị mất mát và quản lý các 	kết nối giữa các ứng dụng
 	+ VD: TCP (Transmission Control Protocol), UDP (User datagram Protocol)
 - Tầng ứng dụng (Applicatioin Layer)
-	+ Chức năng: cung cấp các dịch vụ mạng trực tiếp cho ứng dụng của người dùng. 	Tầng này bao gồm các giao thức cho các dịch vụ như email, truyền file, duyệt web.
-	+ VD: HTTP (Hypertext Tranfer Protocol), FTP (File Transfer Protocol), SMTP 	(Simple Mail Transfer Protocol), DNS (Domain Name System)
+	+ Chức năng: cung cấp các dịch vụ mạng trực tiếp cho ứng dụng của người dùng. Tầng này bao gồm các giao thức cho các dịch vụ như email, truyền file, duyệt web.
+	+ VD: HTTP (Hypertext Tranfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol), DNS (Domain Name System)
+  
 16.5 So sánh
 - Phân biệt ý nghĩa:
-	+ Mô hình OSI là mô hình lý thuyết, có 7 tầng, được thiết kế để chuẩn hóa cách các 	hệ thông mạng giao tiếp với nhau. Mô hình nayf dùng để mô tả chi tiết các chức 	năng của từng tầng trong mạng và giúp hiểu rõ cấu trúc của giao tiếp mạng
-	+ Mô hình TCP/IP là mô hình thực tiễn, có 4 tầng, được sử dụng trong mạng 	Internet. Mô hình này tập trung vào các giao thức thực tế được sử dụng để truyền 	dữ liệu qua mạng và thực hiện các chức năng cần thiết
+	+ Mô hình OSI là mô hình lý thuyết, có 7 tầng, được thiết kế để chuẩn hóa cách các hệ thông mạng giao tiếp với nhau. Mô hình nayf dùng để mô tả chi tiết các chức năng của từng tầng trong mạng và giúp hiểu rõ cấu trúc của giao tiếp mạng
+	+ Mô hình TCP/IP là mô hình thực tiễn, có 4 tầng, được sử dụng trong mạng Internet. Mô hình này tập trung vào các giao thức thực tế được sử dụng để truyền dữ liệu qua mạng và thực hiện các chức năng cần thiết
 - Môi tương quan: 
-	+ Tương đồng: cả 2 mô hình đều phân chia chức năng của giao tiếp mạng thành các 	tầng riêng biệt để dễ quản lý và thiết kế. Tầng giao vận và tầng ứng dụng của cả 2 	mô hình có chức năng tương tự nhau.
-	+ Tương thích: mô hình TCP/IP thực tế bao gồm chức năng của nhiều tầng trong 		mô hình OSI, với 1 số tầng của OSI được gộp lại. Tầng giao tiếp mạng của TCP/IP 	bao gồm cả tầng vật lý và liên kết dữ liệu của OSI. Tầng Internet trong TCP/IP 	tương đương với tầng mạng của OSI. 
+	+ Tương đồng: cả 2 mô hình đều phân chia chức năng của giao tiếp mạng thành các tầng riêng biệt để dễ quản lý và thiết kế. Tầng giao vận và tầng ứng dụng của cả 2 mô hình có chức năng tương tự nhau.
+	+ Tương thích: mô hình TCP/IP thực tế bao gồm chức năng của nhiều tầng trong mô hình OSI, với 1 số tầng của OSI được gộp lại. Tầng giao tiếp mạng của TCP/IP bao gồm cả tầng vật lý và liên kết dữ liệu của OSI. Tầng Internet trong TCP/IP tương đương với tầng mạng của OSI.
+
 16.6 Các giao thức chính
+
 16.6.1 HTTP
 - Cách hoạt động:
-	+ Client (Máy khách): thường là trình duyệt wev hoặc ứng dụng gửi yêu cầu 	(request) đến máy chủ
-	+ Server (máy chủ): nhận yêu cầu từ client, xử lý yêu cầu và gửi lại phản hồi 	(response) cho client
+	+ Client (Máy khách): thường là trình duyệt wev hoặc ứng dụng gửi yêu cầu (request) đến máy chủ
+	+ Server (máy chủ): nhận yêu cầu từ client, xử lý yêu cầu và gửi lại phản hồi (response) cho client
 - Các phương thức HTTP phổ biến:
 + GET: yêu cầu lấy dữ liệu từ máy chủ. VD: tải 1 trang web
 + POST: gửi dữ liệu lên máy chủ để xử lý. VD: gửi thông tin đăng nhập
@@ -521,7 +565,8 @@ Mô hình TCP/IP ( Transmission Control Protocol/Internetee Protocol ) là 1 khu
 	+ HTTP: không mã hóa dữ liệu, dễ bị nghe lén (Không bảo mật)
 	+ HTTPS: phiên bản bảo mật của HTTP, mã hóa dữ liệu để bảo vệ thông tin trong 	quá trình truyền tải
 - State Protocol (Giao thức phi trạng thái)
-	+ HTTP là giao thức phi trạng thái, nghĩa là mỗi yêu cầu từ client đến server là độc 	lập và không liên quan đến các yêu cầu khacs trước đó
+	+ HTTP là giao thức phi trạng thái, nghĩa là mỗi yêu cầu từ client đến server là độc lập và không liên quan đến các yêu cầu khacs trước đó
+
 16.6.2 DNS (Mục 1.3)
 - DNS là hệ thống phần giải tên miền sang địa chỉ IP. Khi bạn nhập 1 tên miền vào trình duyệt, DNS sẽ chuyển đổi tên miền đó thành địa chỉ IP tương ứng để máy tính có thể tìm thấy và truy cập vào máy chủ của trang web. 
 16.6.3 FTP
