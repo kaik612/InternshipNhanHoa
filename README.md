@@ -568,7 +568,8 @@ Mô hình TCP/IP ( Transmission Control Protocol/Internetee Protocol ) là 1 khu
 	+ HTTP là giao thức phi trạng thái, nghĩa là mỗi yêu cầu từ client đến server là độc lập và không liên quan đến các yêu cầu khacs trước đó
 
 16.6.2 DNS (Mục 1.3)
-- DNS là hệ thống phần giải tên miền sang địa chỉ IP. Khi bạn nhập 1 tên miền vào trình duyệt, DNS sẽ chuyển đổi tên miền đó thành địa chỉ IP tương ứng để máy tính có thể tìm thấy và truy cập vào máy chủ của trang web. 
+- DNS là hệ thống phần giải tên miền sang địa chỉ IP. Khi bạn nhập 1 tên miền vào trình duyệt, DNS sẽ chuyển đổi tên miền đó thành địa chỉ IP tương ứng để máy tính có thể tìm thấy và truy cập vào máy chủ của trang web.
+  
 16.6.3 FTP
 - Khái niệm: FTP (File Transfer Protocol) là 1 giao thức được sử dụng để truyền tệp tin giữa các thiết bị trên mạng. Đây là 1 trong những giao thức truyền tải tệp tin lâu đời và phổ bến nhất.
 - Cách hoạt động:
@@ -595,6 +596,7 @@ Mô hình TCP/IP ( Transmission Control Protocol/Internetee Protocol ) là 1 khu
 - Ứng dụng của FTP
 	+ quản lý website: tải lên và quản lý các tệp tin trên máy chủ web
 	+ chia sẻ tập tin: tải lên hoặc tải xuống các tệp tin lớn từ máy chủ
+
 16.6.4 SSH
 - Khái niệm
 SSH (Secure Shell) là 1 giao thức mạng được thiết kế để tạo các kết nối mạng an toàn và bảo mật. Nó thường được sử dụng để quản lý máy tính từ xa, truyền tệp tin vaf thực hiện các tác vụ khác qua mạng
@@ -614,6 +616,7 @@ SSH (Secure Shell) là 1 giao thức mạng được thiết kế để tạo c�
 	+ đa nền tảng: có thể sử dụng trên nhiều hệ điều hành khác nhau (windows, linux, 	macOS)
 	+ đơn giản: dễ sử dụng và cấu hình
 	+ miênx phí: có nhiều phần mềm SSH miễn phí và mã nguồn mở
+
 16.6.5 DHCP
 - Khái niệm
 DHCP (Dynamic Host Configuration Protocol) là 1 giao thức mạng tự động gán các thông số cấu hình mạng cho các thiết bị trong 1 mạng IP. Giao thức này giúp giảm bớt công việc cấu hình thủ công cho người quản trij mạng và đảm bảo rằng các thiết bị trên mạng có thể giao tiếp với nhau 1 cách dễ dàng 
@@ -639,6 +642,7 @@ Lease Time: mỗi địa chỉ IP được cấp phát có 1 thời gian thuê n
 - Ứng dụng của DHCP
 	+ mạng nội bộ (LAN): được sử dụng rộng rãi trong các mạng gia đình, văn phòng, 	trường học để quản lý địa chỉ IP cho nhiều thiết bị
 	+ mạng công cộng: cung cấp địa chỉ IP cho các thiết bị kết nối vào mạng wi-fi công 	cộng
+
 16.6.6 ARP
 - Khái niệm
 ARP (Address Resolution Protocol) là 1 giao thức mạng được sử dụng để tìm địa chỉ MAC (Media Access Control) tương ứng với 1 địa chỉ IP trong mạng cục bộ (LAN). ARP là 1 phần quan trọng của giao thức mạng TCP/IP, giúp các thiết bị trong mạng có thể giao tiếp với nhau 1 cách hiệu quả. Dưới đây là khái quats rõ ràng và dễ hiểu về ARP
@@ -660,6 +664,7 @@ ARP spoofing: là 1 hình thức tấn công trong đó kẻ tấn công gửi c
 	+ Giao tiếp trong mạng cục bộ: mọi thiết bị trong mạng LAN đều cần ARP để gửi 	dữ liệu cho các thiết bị khác
 	+ giao tiếp với gateway: ARP cũng được sử dụng để tìm địa chỉ MAC của gateway 	(bộ định tuyến), giups thiết bị có thế gửi dữ liệu ra ngoài mạng cục bộ
 => ARP là 1 giao thức thiết yêus trong mạng TCP/IP, giúp các thiết bị chuyển đổi địa chỉ IP thành địa chỉ MAC để giao tiếp trên mạng LAN. Mặc dù râts hữu ích, ARP cũng có thể bị lợi dụng trong các cuộc tấn công mạng nếu không được bảo vệ đúng cách
+
 16.6.7 SNMP
 - Khái niệm
 SNMP (Simple NetWork Management Protocol) là 1 giao thức mạng được sử dụng để giám sát, quản lý và cấu hình các thiết bị mạng như bộ định tuyến (router), switch, máy chủ, và các thiết bị khác từ xa. SNMP là 1 phần quan trọng trong việc quản lý mạng, giúp quản trị viên nằm bắt thông tin về hoạt động của mạng và xưr lý sự cố kịp thời.
@@ -687,6 +692,7 @@ SNMP (Simple NetWork Management Protocol) là 1 giao thức mạng được sử
 		+ Quán lý tài nguyên: quản lý và giám sats trạng thái của các thiết bị mạng như 	máy in, server, switch
 		+ Bảo trì hệ thống: tự động gửi cảnh báo khi có sự cố xảy ra, giúp quản trị viên xử 	lý kịp thời 
 => SNMP là 1 giao thức quan trọng trong quản lý và giám sát mạng, giúp các quản trị viên dễ dàng theo dõi và duy trì các thiết bị mạng từ xa. Với phiên bản mới nhất SNMPv3, bảo mật đã được cair thiện đáng kể, làm cho nó trở thành 1 lựa chọn tốt để quản lý mạng trong môi trường doanh nghiệp.
+
 16.6.8 SMTP
 - Khái niệm
 SMTP (Simple Mail Transfer Protocol) là 1 giao thức truyền thông được sử dụng để gửi email qua mạng Internet. Đây là giao thức tiêu chuẩn cho việc truyền tải thư điện tử từ máy chủ gửi đển máy chủ nhận. SMTP chủ yếu xử lý việc gửi và chuyển tiếp email giữa các máy chủ, trong khi các giao thức khác nhau như POP3 hoặc IMAP được sử dụng để nhận email từ máy chủ vào thiết bị của người dùng.
@@ -712,7 +718,8 @@ SMTP được sử dụng để gửi email từ 1 client (máy khách) đến 1
 	+ Gửi email cá nhân: SMTP được sử dụng rộng rãi trong các dịch vụ email cá nhân 	như Gmail, Yahoo mail
 	+ Gửi email doanh nghiệp: SMTP cũng được sử dụng trong các hệ thống email 	doanh nghiệp để gửi va chuyển tiếp email nội bộ và ra ngoài
 	+ Gửi thông báo tự động: nhiều hệ thống phần mềm sử dụng SMTP để gửi thông 	báo tự động, như cảnh báo bảo mật hoặc cập nhật hệ thống
-=> SMTP là 1 giao thức nền tảng để gửi và chuyển tiếp email trên Internet. Mặc dù giao thức này bàn đầu thiếu các tính năng bảo mật, nhưng các biện pháp như TLS và xác thực SMTP đã được thêm vào để bảo vệ email khỏi các mối đe dọa tiềm ẩn. SMTP là công cụ chính để đảm bảo rằng email có thể được gửi đi 1 cách hiệu quar và đáng tin cậy 
+=> SMTP là 1 giao thức nền tảng để gửi và chuyển tiếp email trên Internet. Mặc dù giao thức này bàn đầu thiếu các tính năng bảo mật, nhưng các biện pháp như TLS và xác thực SMTP đã được thêm vào để bảo vệ email khỏi các mối đe dọa tiềm ẩn. SMTP là công cụ chính để đảm bảo rằng email có thể được gửi đi 1 cách hiệu quar và đáng tin cậy
+
 16.7 Phân biệt UDP và TCP
 UDP (User Datagram Protocol) và TCP (Tranmission Control Protocol) là 2 giao thức truyền tải trong mô hình TCP/IP, và chúng có các điểm khác biệt:
 - Kết nối (Connection)
@@ -735,8 +742,10 @@ UDP (User Datagram Protocol) và TCP (Tranmission Control Protocol) là 2 giao t
 	+ UDP: kích thước gói tin lớn hơn, vì không chứa nhiều thông tin kiểm tra
 => TCP: tin cậy, chậm hơn, có kiểm soats luồng, kết nối hướng
 => UDP: nhanh hơn, không đáng tin cậy, không kiểm soát luồng, không kết nối hướng.
+
 16.8 Cấu trúc và phân loại cách chia địa chỉ IPv4
 Địa chỉ IPv4 là 1 chuỗi 32 bit được dùng để định danh các thiết bị trong mạng máy tính. Chúng thường được biểu diễn dưới dạng 4 octet (mỗi octet gồm 8 bit) phân cách nhau bằng dấu chấm, VD: ‘192.168.0.1’. Mỗi octet có thể có giá trị từ 0 đến 255
+
 16.8.1 Phân loại địa chỉ IPv4
 Địa chỉ IPv4 được phân thành 5 lớp chính (A, B, C, D và E) dựa trên các bit đầu tiên của địa chỉ. Dưới đây là cách phân loại chi tiết
 - Lớp A:
@@ -768,6 +777,7 @@ UDP (User Datagram Protocol) và TCP (Tranmission Control Protocol) là 2 giao t
 	+ Bit đầu: 11110
 	+ Dải địa chỉ: 240.0.0.0 đến 255.255.255.255
 	+ Mục đích: dành riêng cho nghiên cứu và phát triển, không dành cho các host 	thông thường
+
 16.8.2 Các loại địa chỉ đặc biệt
 - Địa chỉ private (nội bộ): sử dụng trong mạng nội bộ, không được định tuyến trên Internet
 	+ Lớp A: ‘10.0.0.0’ đến ‘10.255.255.255’
@@ -776,8 +786,10 @@ UDP (User Datagram Protocol) và TCP (Tranmission Control Protocol) là 2 giao t
 - Địa chỉ loopback: được sử dụng để kiểm tra nội bộ, thường là ‘127.0.0.1’
 - Địa chỉ broadcast: địa chỉ đích dùng để gửi thông điệp đến tất cả các thiết bị trong mạng, VD: ‘192.168.1.255’
 - Địa chỉ APIPA (Automatic Private IP Addressing): dải địa chỉ từ ‘169.254.0.0’ đến  ‘169.254.255.255’, dùng khi không thể lấy địa chỉ IP từ DHCP
+  
 16.9 IPv6
 Địa chỉa IPv6 được thiết kế để giải quyết các hạn chế của IPv4, đặc biệt là vấn đề thiếu hụt địa chỉ IP. IPv6 sử dụng không gian địa chỉ 128-bit, lớn hơn rất nhiều so với 32-bit của IPv4, cho phép tạo ra 1 số lượng khổng lồ các địa chỉ duy nhất.
+
 16.9.1 Cấu trúc của địa chỉ IPv6
 Địa chỉ IPv6 dài 128 bit và thường được biểu diễn dưới dạng 8 nhóm tách biệt bởi dấu 2 chấm (‘:’). Mỗi nhóm chứa 4 ký tự hệ thập lục phân (hexadecimal), đại diện cho 16 bit
 VD: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
@@ -785,6 +797,7 @@ VD: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
 	+ Loại bỏ số 0 ở đầu mỗi nhóm: các nhóm số có thể bỏ qua các số 0 ở đầu. 
 	VD: 2001:0db8 có thể viết thành 2001:db8 
 	+ Sử dụng dấu 2 chấm đôi (‘::’) để thay thế cho 1 hoặc nhiều nhóm số 0 liên tiếp: 	VD: địa chỉ ‘2001:0db8:0000:0000:0000:0000:1428:57ab’ có thể được rút gọn 	thành ‘ 2001:db8::1428:57ab’. Tuy nhiên, dấu ‘::’ chỉ được sử dụng 1 lần trong 1 	địa chỉ
+
 16.9.2 Các loại địa chỉ IPv6
 - Unicast: địa chỉ này xác định 1 giao diện duy nhất. Gói tin được gửi đến địa chỉ unicast sẽ chỉ đến đúng 1 giao diện duy nhất.
 	+ Global Unicast Address (GUA): đây là địa chỉ duy nhất trên toàn cầu, tương 	đương với địa chỉ public IPv4
@@ -793,47 +806,59 @@ VD: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
 - Multicast: địa chỉ multicast được sử dụng để gửi gói tin tới 1 nhóm thiết bị. Địa chỉ multicast luôn bắt đầu với ‘ff00::/8’
 - Anycast: địa chỉ anycast được gán cho nhiều giao diện khác nhau, nhưng gói tin được gửi tới địa chỉ anycast sẽ chỉ đến được giao diện gần nhất (theo nghĩa định tuyến)
 - Loopback Address: tương tự như địa chỉ loopback trong IPv4, địa chỉ này được dùng để kiểm tra các phần mềm mạng tròn 1 thiết bị mà không cần kết nối vật lý. Địa chỉ loopback IPv6 là ‘::1’.
+  
 16.9.3 Định dạng địa chỉ IPv6
 Địa chỉ IPv6 có thể được chia thành 2 phần chính:
 - Prefix (Phần tiền tố) : được sử dụng để xác định mạng (tương tự như Network ID trong IPv4). Phần tiền tố thường được biểu diễn bằng ký hiệu CIDR (VD: ‘/64’, ‘/48’), cho biết độ dài của phần mạng trong địa chỉ
 - Interface identifier (Phần định danh giao diện): đây là phần còn lại của địa chỉ, dùng để xác định 1 giao diện cụ thể trên 1 thiết bị mạng
+  
 16.9.4 Phân loại địa chỉ IPv6
 - Global Unicast: được dùng để định danh duy nhất trên toàn cầu. Các địa chỉ này thường bắt đầu với ‘2000::/3’
 - Link-local: dùng cho liên lạc trong 1 mạng cục bộ, thường bắt đầu với ‘fe80::10’
 - Unique Local: tương đương với địa chỉ private trong IPv4, thường bắt đầu với ‘fc00::/7’
 - Multicast: dùng để gửi gói tin tới nhiều điểm đến cùng 1 lúc, bắt đầu với ‘fe00::/8’
+  
 16.9.5 Một số địa chỉ đặc biệt trong IPv6
 - ::/128: địa chỉ không xác định (unspecified address), tương đương với ‘0.0.0.0’ trong IPv4
 - ::1/128: địa chỉ loopback, tương đương với ‘127.0.0.1’ trong IPv4
 - ::/96: địa chỉ tương thích IPv4 (IPv4) (IPv4-compatible), có thể được sử dụng để giao tiếp với các mạng IPv4
 - ::ffff:0:0/96: địa chỉ ánh xạ IPv4 (IPv4-mapped), thường dùng trong quá trình chuyển đổi từ IPv4 sang IPv6
+  
 16.10 VLAN
 VLAN (Virtual LAN) là 1 công nghệ cho phép bạn tạp ra các mạng LAN ảo trên 1 hạ tầng mạng vật lý duy nhất. Với VLAN, bạn có thể phần chia 1 mạng vật lý thành nhiều mạng con nhỏ hơn, mỗi mạng con này có thể hoạt động độc lập với nhau như thể chúng là các mạng riêng biệt.
+
 16.10.1 Cở bản về VLAN
 - Mục đích của VLAN: VLAN cho phép tách biệt các thiết bị trong cùng 1 mạng vật lý thành các nhóm khác nhau dựa trên các yêu cầu về bảo mật, quản lý hoặc lưu lượng mạng
 - Thẻ VLAN (VLAN tag): khhi 1 khung Ethernet đi qua 1 VLAN, nó có thể được đánh dáu với 1 thẻ VLAN (ID VLAN), giúp các thiết bị mạng nhận biết khung đo thuộc về VLAN nào
+- 
 16.10.2 Lợi ích của VLAN 
 - Cải thiện bảo mật: các VLAN giúp cách ly lưu lượng mạng giữa các nhóm thiết bị khác nhau, giảm nguy cơ tấn công từ bên trong mạng
 - Tối ưu hóa lưu lượng mạng: VLAN giảm lưu lượng phát sóng trong mạng bằng cách giới hạn các braodcast domain
 - Quản lý dễ dàng hơn: bạn có thể dễ dàng quản lý, di chuyển và thay đổi cấu trúc mạng mà không cần thay đổi cấu trúc vật lý của hệ thống
+- 
 16.10.3 Cách ứng dụng VLAN
 - Phân chia mạng theo phòng ban: trong 1 cty, bạn có thể tạo các VLAN cho các phòng ban khác nhau như (IT, HR, Marketing) để đảm bảo răng lưu lượng mạng giữa các phòng ban không bị xung đột và tăng cường bảo mật.
 - Tách biệt lưu lượng của các dịch vụ khác nhau: VD, bạn có thể tạo VLAN riêng cho lưu lượng dữ liệu, giọng nói (VoIP), và video để đảm bảo rằng các loại lưu lượng này không làm ảnh hưởng đến nhau
 - Thiết lập mạng khách: trong môi trường doanh nghiệp, 1 VLAN có thể được thiết lập dành riêng cho khách hàng hoặc đối tác đến thăm, đảm bảo rằng họ không có quyền truy cập vào mạng nội bộ chính.
+- 
 16.10.4 Cách cấu hình VLAN
 - Cấu hình trên switch: hầu hết các switch quản lý đều hỗ trợ VLAN. Bạn sẽ cần truy cập vào giao diện quản lý của switch để tạo và gán các cổng vào VLAN tương ứng.
 - Router và Layer 3 Switch: để cho phép các VLAN khác nhau giao tiếp với nhau, bạn cần 1 router hoặc switch Layer 3 để cấu hình định tuyến giữa các VLAN
 - Thẻ VLAN trên các thiết bị: khi cấu hình các thiết bị đầu cuối, bạn cũng có thể cần cấu hình thẻ VLAN trên các NIC (Network Interface Card) nếu thiết bị đó hỗ trợ
+- 
 16.10.5 Thực hành
 - Tạo VLAN: trên switch, bạn có thể tạo VLAN bằng cách sử dụng giao diện dòng lệnh (CLI) hoặc giao diện đồ họa (GUI). VD trên Cisco switch, lệnh để tạo VLAN là ‘vlan <vlan-id>’
 - Gán cổng vào VLAN: sau khi tạo VLAN, bạn có thể gán các cổng vật lý vào VLAN đó bằng lệnh ‘sswitchport access vlan <vlan-id>’
 - Cầu hình Trunking: để cho phép nhiều VLAN đi qua 1 cổng vật lý, bạn cần cấu hình cổng đó thành cổng trunk với lệnh ‘switchport mode trunk’
+- 
 16.10.6 Lưu ý khi sử dụng VLAN
 - Quản lý VLAN ID: ID của mỗi VLAN phải duy nhất trong cùng 1 hệ thống mạng
 - VLAN Trunking Protocol (VTP): đây là 1 giao thức được Cisco phát triển để quản lý và phân phối thông tin VLAN trên toàn bộ hệ thống mạng
+- 
 16.11 Giao thức định tuyến
 Giao thức định tuyến là tập hợp các quy tắc và thuật toán được sử dụng để quyết định đường đi tốt nhất cho dữ liệu từ nguồn đến đích trong 1 mạng máy tính. Định tuyến là quá trình chọn ra con đường tốt nhất để chuyển tiếp các gói tin trong mạng
 Có 2 loại định tuyến chính: định tuyến tĩnh và định tuyến động
+
 16.11.1 Định tuyến tĩnh 
 - Cách hoạt động của định tuyến tĩnh
 	+  Cấu hình thủ công: quản trị viên mạng phải tự tay cấu hình các đường dẫn giữa 	các mạng. VD: nếu có 3 mạng A, B, C, quản trị viên sẽ cấu hình cho bộ định tuyến 	biết rằng để gửi dữ liệu từ A đến C, dữ liệu cần đi qua mạng B
@@ -850,10 +875,13 @@ Có 2 loại định tuyến chính: định tuyến tĩnh và định tuyến �
 	+ Mạng nhỏ: định tuyến tĩnh rất phù hợp cho các mạng nhỏ với số lượng thiết bị và 	đường dẫn hạn chế
 	+ Mạng có cấu trúc ổn định: nếu mạng không thay đổi thường xuyên và có cấu trúc 	ổn định, định tuyến tĩnh là lựa chọn tốt
 	+ cầu hình dự phòng: trong 1 số trường hợp, định tuyến tĩnh có thể được sử dụng 	nhử 1 giải pháp dự phòng cho định tuyến động để đảm bảo rằng nếu định tuyến 	động gặp sự cố, dữ liệu vẫn có thể được truyền tải qua mạng
+
 16.11.2 Định tuyến động
 Định tuyến động là quá trình mà các bộ đinh tuyến trong mạng tự động trao đổi thông tin với nhau và cập nhật bảng định tuyến của chúng để phản ánh các thay đổi trong mạng. Thay vì quản trị viên phải cấu hình thủ công các đường dẫn như trong định tuyến tĩnh, các giao thức định tuyến động sẽ tự động điều chỉnh để tìm đường đi tốt nhất dựa trêm trạng thái hiện tại của mạng
+
 16.12 NAT
 NAT (Network Address Translation) là 1 cơ chế trong mạng máy tính cho phép các thiết bị trên 1 mạng cục bộ (VLAN) sử dụng địa chỉ IP riêng (private IP) để giao tiếp với các thiết bị trên mạng công cộng (như Internet) thông qua 1 địa chỉ IP công cộng (public IP)
+
 16.12.1 Cơ chế hoạt hoạt động của NAT
 - Địa chỉ IP riêng và công cộng
 	- Private IP: được sử dụng trong mạng nội bộ, không thể truy cập trực tiếp từ 	Internet. Các địa chỉ này thường nằm trong các dải như 192.168.x.x, 10.x.x.x hoặc 	172.16.x.x - 172.31.x.x
@@ -863,6 +891,7 @@ NAT (Network Address Translation) là 1 cơ chế trong mạng máy tính cho ph
 	+ B2: Router nhận gói tin, thay thế dịa chir IP riêng của thiết bị bằng địa chỉ IP 	công cộng của Router, đồng thời ghi nhớ địa chỉ IP riêng này trong 1 bảng NAT
 	+ B3: gói tin sau khi được chuyển đổi sẽ được gửi ra Internet với địa chỉ IP nguồn 	là địa chỉ công cộng của router
 	+ B4: khi gói phản hồi từ Internet trờ về, router sẽ dựa vào bảng NAT để chuyển 	tiếp gói tin tới thiết bị nội bộ có địa chỉ IP riêng tương ưungs với địa chỉ IP công 	cộng đã được sử dụng trước đó
+
 16.12.2 Các loại NAT
 - Static NAT
 	+ Mỗi địa chỉ IP riêng được ánh xạ trực tiếp với 1 địa chỉ IP công cộng cố định
@@ -874,6 +903,7 @@ NAT (Network Address Translation) là 1 cơ chế trong mạng máy tính cho ph
 	+ Còn gọi là NAT Overloading, phổ biến nhất
 	+ Nhiều thiết bị nội bộ có thể chia sẻ cùng 1 địa chỉ IP công cộng bằng cách sử 	dụng các cổng (ports) khác nhau
 	+ PAT sẽ ánh xạ cả địa chỉ IP và số cổng của thiết bị nội bộ với địa chỉ IP và số 	cổng trên router
+
 16.12.3  Ưu điểm và nhược điểm
 - Ưu điểm:
 	+ Tiết kiệm địa chỉ IP công cộng
