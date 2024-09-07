@@ -743,7 +743,7 @@ UDP (User Datagram Protocol) và TCP (Tranmission Control Protocol) là 2 giao t
 => TCP: tin cậy, chậm hơn, có kiểm soats luồng, kết nối hướng
 => UDP: nhanh hơn, không đáng tin cậy, không kiểm soát luồng, không kết nối hướng.
 
-16.8 Cấu trúc và phân loại cách chia địa chỉ IPv4
+# 16.8 Cấu trúc và phân loại cách chia địa chỉ IPv4
 Địa chỉ IPv4 là 1 chuỗi 32 bit được dùng để định danh các thiết bị trong mạng máy tính. Chúng thường được biểu diễn dưới dạng 4 octet (mỗi octet gồm 8 bit) phân cách nhau bằng dấu chấm, VD: ‘192.168.0.1’. Mỗi octet có thể có giá trị từ 0 đến 255
 
 16.8.1 Phân loại địa chỉ IPv4
