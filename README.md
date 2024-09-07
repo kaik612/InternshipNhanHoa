@@ -1,4 +1,4 @@
-I.Khái quát về công ty và các sản phẩm của công ty
+# I.Khái quát về công ty và các sản phẩm của công ty
 ![image](https://github.com/user-attachments/assets/61beecf3-bbb1-47e7-8a45-adbfd5a60bf0)
 
 Công ty TNHH Phần mềm Nhân Hòa là 1 trong những cty hàng đầu tại Việt Nam trong lĩnh vực công nghệ thông tin và dịch vụ internet. Dưới đây là danh sách các sản phẩm và dịch vụ mà Nhần Hòa cung cấp:
@@ -59,9 +59,9 @@ Backup và phục hồi dữ liệu: dịch vụ sao lưu và phục hồi dữ 
 
 Firewall & Security Solotions: các giải pháp bảo mật tường lửa và an ninh mạng cho doanh nghiệp.
 
-II.Công nghệ ứng dụng
+# II.Công nghệ ứng dụng
 
-1.Tên miền (Domain)
+# 1.Tên miền (Domain)
 
 1.1Khái niệm
 
@@ -140,7 +140,7 @@ Một số công cụ quản lí tên miền:
 	+ Plesk: công cụ quản lý hosting và DNS đa năng
 	+ DNS Management Tools: công cụ quản lý DNS trực tuyến của các nhà 		đăng ký tên miền.
 
-2.Hosting 
+# 2.Hosting 
 
 - Hosting hay còn gọi là web hosting, là dịch vụ cung cấp không gian lưu trữ và tài nguyên trên máy chủ cho các trang web, giúp chúng có thể truy cập được qua internet. Khi bạn mua 1 dịch vụ hosting, bạn thuê 1 phần không fian trên máy chủ để lưu trữ các tệp tin, cơ sở dữ liệu, và nội dung của trang web của bạn. 
 - Hosting cho phép người dùng từ mọi nơi trên thế giới truy cập vào trang web của bạn
@@ -161,7 +161,7 @@ Một số công cụ quản lí tên miền:
 - máy chủ gửi phản hồi: nội dung trang web được gưir từ máy chủ về trình duyệt người dùng dưới dạng HTML, CSS, JavaScript và các tệp tin đa phương tiện khác.
 - Trình duyệt hiển thị nội dung: Trình duyệt nhận nội dung từ máy chủ và hiển thị trang web cho người dùng.
 
-3.Virtualization
+# 3.Virtualization
 Ảo hóa là một công nghệ cho phép bạn tạo ra nhiều môi trường mô phỏng hoặc tài nguyên chuyên dụng từ một hệ thống phần cứng vật lý duy nhất. Nó cho phép tạo ra các phiên bản ảo (thay vì vật lý) của các tài nguyên máy tính khác nhau, chẳng hạn như:
 
 Hệ điều hành (Ảo hóa hệ điều hành): Chạy nhiều hệ điều hành trên một máy vật lý duy nhất bằng phần mềm như VMware, Hyper-V hoặc VirtualBox. Mỗi hệ điều hành hoạt động như thể nó đang chạy trên phần cứng riêng biệt.
@@ -169,7 +169,7 @@ Phần cứng (Ảo hóa phần cứng): Máy ảo (VM) mô phỏng một môi t
 Lưu trữ (Ảo hóa lưu trữ): Gom các lưu trữ vật lý từ nhiều thiết bị lưu trữ mạng thành một thiết bị lưu trữ duy nhất được quản lý từ một bảng điều khiển trung tâm.
 Mạng (Ảo hóa mạng): Kết hợp tài nguyên mạng phần cứng và phần mềm cùng chức năng mạng thành một thực thể quản trị duy nhất dựa trên phần mềm.
  
-4.Cloud computing
+# 4.Cloud computing
 Cloud computing là mô hình phân phối dịch vụ điện toán qua internet, cho phép người dùng truy cập và sử dụng tài nguyên điện toán (như máy chủ, lưu trữ, cơ sở dữ liệu, mạng, phần mềm) mà không cần đầu tư và quản lý hạ tầng vật lý.
 
 Các mô hình dịch vụ trong cloud computing
@@ -188,7 +188,7 @@ Private cloud là mô hình dịch vụ cloud được sử dụng độc quyề
 
 Hybrid cloud kết hợp giữa public cloud và private cloud, cho phép các tổ chức tận dụng cả hai loại mô hình để đạt được hiệu quả cao nhất. Ví dụ, một tổ chức có thể sử dụng public cloud cho các tác vụ không quan trọng và private cloud cho dữ liệu nhạy cảm.
 
-5.Container
+# 5.Container
 
 Là công nghệ giúp đóng gói và triển khai ứng dụng cùng với tất cả các thành phần phụ thuộc của nó (thư viện, cấu hình, ...) vào 1 đơn vị duy nhất. Điều này đảm bảo rằng ứng dụng chạy nhất quán trên bâts kỳ môi trường nào, từ máy tính cá nhân đến máy chủ trong các trung tâm dữ liệu.
 
@@ -213,7 +213,7 @@ Là công nghệ giúp đóng gói và triển khai ứng dụng cùng với t�
 - Kubernetes
 	+ là 1 hệ thống điều phối container ( container oschestration) mã nguônf mở, giúp quản lý và tự động hóa việc triển khai, mở rộng và vận hành các container.
 
-6.Hệ điều hành
+# 6.Hệ điều hành
 
 Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa phần cứng của máy tính và các ứng dụng người tiêu dùng. Hệ điều hành quản lý tài nguyên máy tính, cung cấp các dịch vụ cần thiết cho các chương trình ứng dụng và người dùng.
 
@@ -257,7 +257,7 @@ Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa 
 	+ IOS: sử dụng trong thiết bị của Apple.
 	+ Android: sử dụng rộng trong các thiết bị di động của nhiều hãng sản xuất.
 
-7.Hệ điều hành Linux
+# 7.Hệ điều hành Linux
 - Linux là một hệ điều hành mã nguồn mở, có nghĩa là mã nguồn của nó được công khai và người dùng có thể tự do sử dụng, sửa đổi và phân phối lại. Linux được phát triển dựa trên hệ điều hành Unix và thường được sử dụng trên các máy chủ, máy tính cá nhân, thiết bị nhúng và nhiều hệ thống khác.
 - Các đặc điểm nổi bật của Linux
 + Mã nguồn mở: Người dùng có thể truy cập, chỉnh sửa và phân phối lại mã nguồn.
@@ -272,7 +272,7 @@ Là 1 phần mềm hệ thống quan trọng, đóng vai trò trung gian giữa 
 + CentOS/RHEL: Dành cho môi trường doanh nghiệp.
 + Arch Linux: Linh hoạt, cho phép tùy chỉnh cao.
 
-8.NGINX
+# 8.NGINX
 Nginx (engine x) là 1 phần mềm mã nguồn mở mạnh mẽ và phổ biến, được sử dụng chủ yếu như 1 máy chủ web (web server) nhưng cũng có thể đảm nhận nhiều vai trò khác nhau như máy chủ proxy ngược (reverse proxy server), máy chủ proxy email (email proxy server), và cân bằng tải (load balancer). Nginx được biết đến với khả năng xử lý đồng thời 1 số lượng lớn kết nối với hiệu suất cao, ít tiêu tốn tài nguyên, tính ổn định tốt. 
 
 8.1 Các chức năng chính của Nginx
@@ -300,7 +300,7 @@ Nginx (engine x) là 1 phần mềm mã nguồn mở mạnh mẽ và phổ biế
 - nginx thường được sử dungj như 1 máy chủ web kết hợp với PHP ( qua PHP-FPM) để xây dựng các ưngs dụng làm web
 - nó cũng được sử dụng làm máy chủ proxy ngược trước các ứng dụng web như node.js, python, hay ruby để phân phối tải và bảo vệ các dịch vụ nội bộ
   
-9.APACHE
+# 9.APACHE
 
 9.1 APACHE HTTP SERVER 
 - Apache HTTP Server ( hay còn gọi là apache) là 1 phần mềm máy chủ web mã nguồn mở, có chức năng chính là phục vụ nọi dung web (trang html, hình ảnh, video, và các tài liệu khác) cho người dùng thông qua giao thức HTTP và HTTPS. Apache đóng vai trò là cầu nối giữa máy chủ lưu trữ nội dung (web server) và trình duyệt của người dùng (client) 
@@ -321,7 +321,7 @@ Nginx (engine x) là 1 phần mềm mã nguồn mở mạnh mẽ và phổ biế
 	+ apache có thể hoạt động như 1 máy chủ cân bằng tải, giúp phân phối lưu lượng truy cập đồng đều giữa nhiều máy chủ backend, tăng tính sẵn sàng và hiệu suất của ứng dụng web.
 - proxy features ( tính năng proxy )
 	+ với mô đun ‘mod_proxy’, apache có thể hoạt động như 1 proxy server, chuyển tiếp các yêu cầu từ người dùng tới các máy chủ khác, hỗ trợ caching, và tăng tốc độ truy cập.
-10.XAMPP
+# 10.XAMPP
 XAMPP là 1 gói phần mềm mã  nguồn mở rất phổ biến, được sử dụng để thiết lập môi trường phát triển web cục bộ trên máy tính cá nhân. Đây là 1 công cụ hữu ích cho các nhà phát triển web, giúp họ dễ dàng cài đặt và quản lý 1 máy chủ web trên máy tính cá nhân mà không cần phải kết nối với internet.
 10.1 XAMPP là gì
 - X: Cross-platform (đa nền tảng ), có nghĩa là XAMPP có thể chạy trên nhiều hệ điều hành khác nhau, bao gồm windows, linux, và macOS
@@ -355,7 +355,7 @@ Sau khi phát triênr ứng dụng web trên XAMPP, bạn cần chuyển nó san
 - chuyển cơ sở dữ liệu: sử dung công cụ phpAdmin để xuất cơ sở dữ liệu từ XAMPP và nhập nó vào cơ sở dữ liệu trên máy chủ thực tế.
 - kiểm tra câus hình: đảm bảo rằng tất cả các cấu hình như đường dẫn, quuyền truy cập, và cấu hình máy chủ đã được điều chỉnh phù hợp cho môi trường sản xuất.
 
-11.Phân biệt SSL, TLS, HTTP, HTTPS
+# 11.Phân biệt SSL, TLS, HTTP, HTTPS
 - HTTP giống như gửi thư bằng bưu thiếp. Nội dung thư ai cũng có thể đọc được nếu họ muốn.
 
 - HTTPS giống như gửi thư trong một phong bì được niêm phong cẩn thận. Chỉ có người nhận mới có thể mở và đọc nội dung bên trong.
@@ -376,7 +376,7 @@ Bất cứ khi nào bạn gửi thông tin nhạy cảm trên internet, chẳng 
 + Thông tin cá nhân
 Hầu hết các trang web hiện nay đều sử dụng HTTPS. Bạn có thể nhận biết bằng cách nhìn vào thanh địa chỉ trình duyệt. Nếu thấy biểu tượng ổ khóa và "https://" ở đầu địa chỉ, nghĩa là trang web đó đang sử dụng HTTPS.
 
-12.SSH
+# 12.SSH
 SSH ( Secure Shell ) là 1 giao thức mạng được sử dụng để thiết lập kết nối an toàn giữa 2 máy tính. Nó được sử dụng phổ biến để đăng nhập từ xa vaò các hệ thống máy chủ, truyền tải file, và thực hiện các lệnh từ xa 1 cách an toàn.
 
 12.1 Các khái niệm cơ bản về SSH
@@ -397,7 +397,7 @@ và máy server (máy chủ), giúp bảo vệ thông tin khỏi bị đánh c�
 - linh hoạt: có thể sử dụng để quản lí từ xa, truyền tải dữ liệu, và nhiều ứng dụng khác.
 - dễ sử dụng: với sự hỗ trợ rộng rãi từ các hệ điều hành và công cụ, SSH rất dễ để triển khai và sử dụng
   
-13.Tìm hiểu rộng hơn về SaaI
+# 13.Tìm hiểu rộng hơn về SaaI
 - IaaS ( Infrastureture as Service ) là 1 trong 3 mô hình chính của dịch vụ điện toán đám mây, cung với PaaS ( platform as a service ) và SaaS (software as a service ). IaaS cung cấp hạ tầng IT như máy chủ, lưu trưc, mạng và các tài nguyên điện toán khác thông qua Internet. Thay vì phải mua và quản lý phần cứng vật lý, người dùng có thể thuê các tài nguyên này từ nhà cung cấp dịch vụ đám mây và chỉ trả tiền dựa trên mức độ sử dụng. 
 - Đặc điểm chính của IaaS:
 	+ tính linh hoạt: người dùng có thể tăng hoặc giảm tài nguyên ( máy chủ, lưu trữ, ..) theo nhu cầu mà không cần đầu từ vào cở sở hạ tầng vật lý.
@@ -410,9 +410,9 @@ và máy server (máy chủ), giúp bảo vệ thông tin khỏi bị đánh c�
 	+ Google cloud platform (GCP)
 	+ IBM cloud
 
-14.Cách trỏ tên miền
+# 14.Cách trỏ tên miền
    
-15.Các email server
+# 15.Các email server
 
 15.1 kerio
 Kerio Connect (hay còn gọi là Kerio MailServer) là một giải pháp email server phổ biến, được thiết kế dành cho các doanh nghiệp vừa và nhỏ. Đây là một nền tảng kết hợp giữa email, lịch, danh bạ, và các tính năng hợp tác khác, với mục tiêu cung cấp một giải pháp thay thế dễ sử dụng và quản lý cho các hệ thống email server phức tạp như Microsoft Exchange.
@@ -484,7 +484,7 @@ MDaemon là 1 phần mềm quản lý email server được phát triển bởi 
 	+ Tính năng hạn chế: mặc dù cung cấp nhiều tính năng cơ bản cho email server, nhưng có thể không đầy đủ cho các doanh nghiệp có yêu cầu đặc biệt cao về quản trị và tích hợp hệ thống phức tạp.
 - Kết luận: MDaemon là giải pháp email server toàn diện, bảo mật và dễ quản lý cho các doanh nghiệp vừa và nhỏ. Với tính năng bảo mật tốt, quản lý dễ dàng và chi phí hợp lý, đây là một lựa chọn lý tưởng cho các doanh nghiệp cần một giải pháp email nội bộ ổn định và hiệu quả.
 
-16.Mô hình OSI và TCP/IP
+# 16.Mô hình OSI và TCP/IP
 
 16.1 Khái niệm OSI 
 Mô hình OSI (Open Systems Interconnection) là 1 khung mô tả các chức năng của hệ thống mạng máy tính qua 7 tầng khác nhau. Mỗi tầng thực hiện 1 vai trò cụ thể trong việc truyền và nhận dữ liệu qua mang.
@@ -720,7 +720,7 @@ SMTP được sử dụng để gửi email từ 1 client (máy khách) đến 1
 	+ Gửi thông báo tự động: nhiều hệ thống phần mềm sử dụng SMTP để gửi thông 	báo tự động, như cảnh báo bảo mật hoặc cập nhật hệ thống
 => SMTP là 1 giao thức nền tảng để gửi và chuyển tiếp email trên Internet. Mặc dù giao thức này bàn đầu thiếu các tính năng bảo mật, nhưng các biện pháp như TLS và xác thực SMTP đã được thêm vào để bảo vệ email khỏi các mối đe dọa tiềm ẩn. SMTP là công cụ chính để đảm bảo rằng email có thể được gửi đi 1 cách hiệu quar và đáng tin cậy
 
-16.7 Phân biệt UDP và TCP
+# 16.7 Phân biệt UDP và TCP
 UDP (User Datagram Protocol) và TCP (Tranmission Control Protocol) là 2 giao thức truyền tải trong mô hình TCP/IP, và chúng có các điểm khác biệt:
 - Kết nối (Connection)
 	+ TCP: là giao thức kết nối hướng (connection-oriented). Trước khi truyền dữ liệu, 	TCP thiết lập 1 kết nối giữa 2 máy tính (thông qua quá trình bắt tay 3 bước - three 	way handshake)
